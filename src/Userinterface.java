@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Userinterface {
     private Controller controller;
-    Scanner keyboard = new Scanner(System.in);
+    private Scanner keyboard = new Scanner(System.in);
 
     public void startProgram() {
 
@@ -39,7 +39,7 @@ public class Userinterface {
             String superkraft = keyboard.nextLine();
             System.out.print("Indtast skabelsesår af din superhelt: ");
             if (!keyboard.hasNextInt()) {
-                String text =keyboard.next();
+                String text = keyboard.next();
                 System.out.println(text + " er ikke et gyldigt tal. Prøv igen. ");
             }
             int skabelsesår = keyboard.nextInt();
@@ -76,7 +76,7 @@ public class Userinterface {
 
     }
 
-    public void ændreSuperhelt () {
+    public void ændreSuperhelt() {
         System.out.println("Skriv navnet på den superhelt du vil søge efter: ");
         String søgBestemtNavn = keyboard.next();
         controller.visSuperhelt(søgBestemtNavn);

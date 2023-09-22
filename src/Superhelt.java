@@ -20,39 +20,51 @@ public class Superhelt {
         this.menneske = menneske;
         this.styrke = styrke;
     }
+
     public String getNavn() {
         return navn;
     }
+
     public String getSuperheltenavn() {
         return superheltenavn;
     }
+
     public String getSuperkraft() {
         return superkraft;
     }
+
     public int getSkabelsesår() {
         return skabelsesår;
     }
+
     public boolean getMenneske() {
         return menneske;
     }
+
     public int getStyrke() {
         return styrke;
     }
+
     public void setNavn(String n) {
         navn = n;
     }
+
     public void setSuperheltenavn(String r) {
         superheltenavn = r;
     }
+
     public void setSuperkraft(String s) {
         superkraft = s;
     }
+
     public void setSkabelsesår(int y) {
         skabelsesår = y;
     }
+
     public void setMenneske(boolean i) {
         menneske = i;
     }
+
     public void setStyrke(int s) {
         styrke = s;
     }

@@ -29,7 +29,7 @@ public class Controller {
     public void ændreSkabelsesår(String søgBestemtNavn, int nytÅrSkabt){
         db.ændreSkabelsesår(søgBestemtNavn, nytÅrSkabt);
     }
-    public void ændreErMenneske(String søgBestemtNavn, Boolean nyErMenneske){
+    public void ændreErMenneske(String søgBestemtNavn, boolean nyErMenneske){
         db.ændreErMenneske(søgBestemtNavn, nyErMenneske);
     }
     public void ændreStyrkeNiveau(String søgBestemtNavn, int nytStyrkeNiveau){

@@ -2,15 +2,15 @@ import java.util.ArrayList;
 
 public class Database {
 
-    private ArrayList<Superhelt> superhelte = new ArrayList<Superhelt>();
+    private ArrayList<Superhelt> database = new ArrayList<Superhelt>();
 
 
     public void tilføjSuperhelt(String navn, String superheltenavn, String superkraft, int skabelsesår, boolean menneske, int styrke) {
-        superhelte.add(new Superhelt(navn, superheltenavn, superkraft, skabelsesår, menneske, styrke));
+        database.add(new Superhelt(navn, superheltenavn, superkraft, skabelsesår, menneske, styrke));
     }
 
     public ArrayList<Superhelt> hentSuperhelte() {
-        return superhelte;
+        return database;
     }
 
 
@@ -26,7 +26,7 @@ public class Database {
 
 
     public Superhelt visSuperhelt(String søgBestemtNavn) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 System.out.println(hentSuperhelte());
             } else if (!s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
@@ -37,7 +37,7 @@ public class Database {
     }
 
     public Superhelt ændreNavn(String søgBestemtNavn, String nytNavn) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setNavn(nytNavn);
             }
@@ -46,7 +46,7 @@ public class Database {
     }
 
     public Superhelt ændreSuperheltenavn(String søgBestemtNavn, String nytSuperheltenavn) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setNavn(nytSuperheltenavn);
             }
@@ -55,7 +55,7 @@ public class Database {
     }
 
     public Superhelt ændreSuperkraft(String søgBestemtNavn, String nySuperkraft) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setSuperkraft(nySuperkraft);
             }
@@ -64,7 +64,7 @@ public class Database {
     }
 
     public Superhelt ændreSkabelsesår(String søgBestemtNavn, int nytSkabelsesår) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setSkabelsesår(nytSkabelsesår);
             }
@@ -73,7 +73,7 @@ public class Database {
     }
 
     public Superhelt ændreErMenneske(String søgBestemtNavn, Boolean nyErMenneske) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setMenneske(nyErMenneske);
             }
@@ -82,7 +82,7 @@ public class Database {
     }
 
     public Superhelt ændreStyrkeNiveau(String søgBestemtNavn, int nytStyrkeNiveau) {
-        for (Superhelt s : superhelte) {
+        for (Superhelt s : database) {
             if (s.getNavn().equalsIgnoreCase(søgBestemtNavn)) {
                 s.setStyrke(nytStyrkeNiveau);
             }
