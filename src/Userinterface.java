@@ -38,6 +38,10 @@ public class Userinterface {
             System.out.print("Indtast superkraft: ");
             String superkraft = keyboard.nextLine();
             System.out.print("Indtast skabelsesår af din superhelt: ");
+            if (!keyboard.hasNextInt()) {
+                String text =keyboard.next();
+                System.out.println(text + " er ikke et gyldigt tal. Prøv igen. ");
+            }
             int skabelsesår = keyboard.nextInt();
             System.out.print("Indtast styrke 1-10: ");
             int styrke = keyboard.nextInt();
